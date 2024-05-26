@@ -62,7 +62,13 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'OralCancer.urls'
-
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Basic': {
+            'type': 'basic'
+        }
+    }
+}
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
